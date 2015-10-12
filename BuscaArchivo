@@ -1,0 +1,10 @@
+#!/bin/bash
+echo -n "Nombre: "
+read nombre
+
+if ls $nombre >/dev/null 2>/dev/null
+then
+  echo "Existe"
+else
+  echo "No existe"
+fi

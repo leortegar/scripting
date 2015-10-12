@@ -1,0 +1,3 @@
+#!/bin/bash
+tr abcdefghijklmnopqrstuvwxyz0123456789ABCDFEGHIJKLMNPQRSTUVWXYZ \
+   thequickbrownfxjmpsvalzydg5731204698ZTEAOIRM,VAASKFJQWREIEFNM
