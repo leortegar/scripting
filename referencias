@@ -38,3 +38,1007 @@ https://www-01.ibm.com/support/knowledgecenter/api/content/nl/es/ssw_ibm_i_72/db
 
 http://developerblog.redhat.com/2015/02/05/gcc5-and-the-c11-abi/
 https://fedoraproject.org/wiki/Changes/GCC5
+
+
+
+
+Reglas con makefile
+empaquetamiento con autotools
+Macros
+
+ Regla
+  | 
+  v
+Compilar: (        ) <-----Dependencias
+	gcc ------------------
+	----------------------
+	----------------------
+	----------------------
+	------objetivos-------
+	----------------------
+	----------------------
+	----------------------
+
+makefiles <--- automatizar procesos, es una de las utilidades
+
+
+apple developer program
+    1  su
+    2  ip a
+    3  su -
+    4  sudo su
+    5  su root
+    6  su -
+    7  sudo su
+    8  i a
+    9  ip a
+   10  sudo su
+   11  ping 8.8.8.8
+   12  su root
+   13  ping 8.8.8.8
+   14  cat /proc/cpuinfo
+   15  grep -c ^processor /proc/cpuinfo
+   16  exit
+   17  s -efa | grep dw.sapPRd
+   18  ps
+   19  ps -efa | grep x
+   20  pwd
+   21  cd
+   22  cd 7
+   23  cd /
+   24  ls
+   25  more /etc/passwd
+   26  #ingeniero
+   27  #soy ingenier
+   28  #soy ingeniero
+   29  exit
+   30  sudo su -
+   31  sudo su - root
+   32  su - root
+   33  man dnf
+   34  sudo su -
+   35  sudo dnf install git
+   36  clear
+   37  sudo su - 
+   38  su -
+   39  git clone https://github.com/IntelBUAP/GuiaDeInterfazHumana.git
+   40  git pull
+   41  ls
+   42  cd GuiaDeInterfazHumana/
+   43  git pull
+   44  cd ...
+   45  cd ..
+   46  clear
+   47  ls -lrt GuiaDeInterfazHumana/
+   48  ls -lrt
+   49  su -
+   50  ls
+   51  cd GuiaDeInterfazHumana/
+   52  ls
+   53  ls -la
+   54  vim
+   55  cd -
+   56  ls
+   57  cd Documentos/
+   58  ls
+   59  cd Kikin/
+   60  ls
+   61  pwd
+   62  cd /home/intel/GuiaDeInterfazHumana/
+   63  ls -la
+   64  clear
+   65  ls -l
+   66  vim hig.master.es.po
+   67  ls
+   68  cd GuiaDeInterfazHumana/
+   69  ls
+   70  vim hig.master.es.po
+   71  cd ..
+   72  ls
+   73  cd Documentos/
+   74  ls
+   75  cd Kikin/
+   76  ls
+   77  vim learningVim
+   78  more learningVim 
+   79  vim learningVim 
+   80  history
+   81  clear
+   82  s
+   83  ls
+   84  more learningVim 
+   85  vim learningVim 
+   86  cd
+   87  s
+   88  ls
+   89  cd GuiaDeInterfazHumana/
+   90  ls
+   91  vim hig.master.es.po 
+   92  vim -v
+   93  vim hig.master.es.po 
+   94  sudo shutdown now
+   95  exit
+   96  man wget
+   97  ls
+   98  wd
+   99  pwd
+  100  cp index.html index_copy.html
+  101  ls
+  102  ls -lrt
+  103  vim index_copy.html 
+  104  diff index.html index_copy.html 
+  105  man wget
+  106  exit
+  107  history
+  108  #mercurial
+  109  #zsh
+  110  cear
+  111  clear
+  112  ls
+  113  cd GuiaDeInterfazHumana/
+  114  ls
+  115  git config --global user.name intel
+  116  git config --global user.name leortegar
+  117  git config --global user.email ortegarle@gmail.com
+  118  git config --global core.editor vim
+  119  git config --global merge.tool vimdiff
+  120  git config --list
+  121  #git add README.txt
+  122  #git status
+  123  #git commit
+  124  #git status
+  125  #git push origin master
+  126  #git pool
+  127  #
+  128  #markdown
+  129  history
+  130  cd 
+  131  ls
+  132  cd Documentos/
+  133  ls
+  134  cd Kikin/
+  135  ls
+  136  vim index.html
+  137  firefox index.html &
+  138  vim index.html
+  139  ls
+  140  vim ssc.css
+  141  vim index.html
+  142  vim ssc.css
+  143  vim index.html
+  144  exit
+  145  history
+  146  git clone https://github.com/leortegar/investigacion-DCVS.git
+  147  ls
+  148  cd investigacion-DCVS/
+  149  ls
+  150  vim README.md 
+  151  git status
+  152  git add
+  153  git add README.md 
+  154  git status
+  155  exit
+  156  vim
+  157  ls
+  158  cd Documentos/
+  159  ls
+  160  cd Doc
+  161  ls
+  162  vim
+  163  vim notas14092015.txt
+  164  sudo shutdown now
+  165  ls
+  166  cd Documentos/
+  167  ls
+  168  cd
+  169  cd /
+  170  ls
+  171  cd sys/
+  172  ls
+  173  cd  /
+  174  ls
+  175  cd sys/
+  176  ls
+  177  cd kernel/
+  178  ls
+  179  cd /usr/src/l
+  180  cd /usr/src
+  181  ls
+  182  cd kernels/
+  183  ls
+  184  ls -la
+  185  #yalu.galicia@gmail.com
+  186  exit
+  187  ls
+  188  cd Documentos/
+  189  ls
+  190  cd Python/
+  191  ls
+  192  ps
+  193  set
+  194  echo $SHELL
+  195  echo $PATH
+  196  PATH = 
+  197  PATH= 
+  198  echo $PATH
+  199  ls
+  200  date
+  201  exit
+  202  ls
+  203  echo $PATH
+  204  echo 
+  205  echo $PS1
+  206  PS1="Que quieres...!"
+  207  exit
+  208  PS1="Qué quieres...!"
+  209  #calla
+  210  clear
+  211  cear
+  212  clear
+  213  man cat
+  214  cat
+  215  PS1="Qué quieres...! "
+  216  EF
+  217  EOF
+  218  cat
+  219  ls
+  220  cd Documentos/
+  221  ls
+  222  cat notas14092015.txt 
+  223  exit
+  224  ps
+  225  exit
+  226  ps
+  227  PS1="Hola... "
+  228  ps
+  229  bash
+  230  exit
+  231  ps
+  232  PS1="Adios... "
+  233  bash
+  234  exit
+  235  PS1="Adios... "
+  236  ps
+  237  man ps
+  238  ps -ejH
+  239  ps
+  240  ps -ejH | grep bash
+  241  ps -ejH | egrep 'bash|PID'
+  242  man mkfile
+  243  pwd
+  244  >alfa
+  245  ls
+  246  type alfa
+  247  ls -l alfa 
+  248  ls
+  249  ls >alfa 
+  250  cat alfa 
+  251  >x
+  252  ls
+  253  ls >alfa 
+  254  cat alfa 
+  255  ls
+  256  cat errores 
+  257  rm errores 
+  258  ls
+  259  rm x
+  260  ls
+  261  rm alfa 
+  262  ls
+  263  clear
+  264  ps
+  265  ps -ejH | egrep 'bash|PID'
+  266  >notas23092015
+  267  ls
+  268  vim notas23092015 
+  269  cat notas23092015 
+  270  while :; do date; sleep 3; clear; done
+  271  while :; do date; sleep 3; clear; done
+  272  date; clear; ls
+  273  ps -ejH | egrep 'bash|PID'
+  274  ls xxx
+  275  echo $?
+  276  ls
+  277  ls notas14092015.txt 
+  278  echo $?
+  279  exit
+  280  PS1="Hola... "
+  281  echo $saludos
+  282  ps
+  283  saludos="Buenas noches"
+  284  echo $saludos
+  285  ps
+  286  bash
+  287  exit
+  288  dnf search bpython
+  289  dnf install python3-bpython.noarch
+  290  sudo dnf install python3-bpython.noarch
+  291  sudo su -
+  292  su -
+  293  read -n 4 <&3
+  294  cat SUMMARY.htm 2>&1 prueba.txt
+  295  echo 12345
+  296  exec 3<> archivo.txt
+  297  read -n 4 <&3
+  298  echo -n . >&3
+  299  exec 3>&~
+  300  exec 3>&-
+  301  cat archivo.txt 
+  302  ps
+  303  PS1= "Qué quieres...! "
+  304  PS1="Qué quieres...! "
+  305  ls
+  306  cd Documentos/
+  307  ls
+  308  ls XX
+  309  pwd
+  310  ls XX 2> errores
+  311  ls
+  312  cat errores 
+  313  saludos="Buenas tardes"
+  314  echo saludos
+  315  echo $saludos
+  316  while true; do
+  317  sum=1
+  318  while true; do echo $saludos $sum++; sleep 10; done
+  319  bash
+  320  ps
+  321  echo $saludos
+  322  bash
+  323  exit
+  324  date;ls;who
+  325  date;ls;who;
+  326  man tr
+  327  vim script00.sh
+  328  vim script01.sh
+  329  cat script0
+  330  cat script00.sh 
+  331  cat script01.sh 
+  332  ls -l
+  333  mv script00.sh script01.sh Documentos/
+  334  ls
+  335  ls Documentos/
+  336  cd Documentos/
+  337  ls -l
+  338  ls Python/
+  339  python
+  340  ls
+  341  ls -l
+  342  chmod u+x script00.sh script01.sh 
+  343  ls -l
+  344  echo $PATH
+  345  script00.sh
+  346  PATH=.:$PATH
+  347  echo $PATH
+  348  script00.sh
+  349  mv script00.sh script02.sh
+  350  ls
+  351  mv script02.sh script00.sh
+  352  ls
+  353  touch script02.sh
+  354  ls
+  355  mv script00.sh script02.sh 
+  356  ls
+  357  mv script02.sh script00.sh 
+  358  ls
+  359  man cp
+  360  cp script00.sh script02.sh
+  361  ls
+  362  vim script02.sh 
+  363  ls
+  364  echo $1
+  365  ls
+  366  lsvar=`ls`
+  367  echo $lsvar
+  368  vim script03.sh
+  369  ls
+  370  chmod u+x script03.sh 
+  371  ls
+  372  script03.sh
+  373  vim script03.sh
+  374  script03.sh
+  375  echo $files
+  376  files=ls
+  377  echo $files
+  378  value=`expr 7 + 3`; echo $value
+  379  count=5; count=`expr $count + 1`; echo $count
+  380  exit
+  381  su
+  382  phython
+  383  dnf search python
+  384  exit
+  385  ls
+  386  cd Documentos/
+  387  ls
+  388  cd Python/
+  389  ls
+  390  python
+  391  man python
+  392  ls
+  393  history
+  394  python3
+  395  python
+  396  bpython
+  397  pytho3
+  398  python3
+  399  man diff
+  400  exit
+  401  ls
+  402  python
+  403  exit
+  404  ps
+  405  PS1="Hola... "
+  406  ps
+  407  exit
+  408  SET
+  409  set
+  410  clear
+  411  echo $ATH
+  412  echo $PATH
+  413  Mensaje="Buenas tardes"
+  414  echo $Mensaje 
+  415  echo $PATH
+  416  whereis python
+  417  read alfa
+  418  echo $alfa
+  419  ps
+  420  bash
+  421  ps
+  422  #the bindex module
+  423  exit
+  424  ls
+  425  cd Documentos/
+  426  ls
+  427  vim multTable
+  428  ls
+  429  chmod u+x multTable 
+  430  ls
+  431  ./multTable 
+  432  a=`ls`
+  433  for i in $a; do echo "El nombre del archivo o directorio es: $i"; done
+  434  vim multTable
+  435  ./multTable 
+  436  echo *
+  437  echo $a
+  438  a="Hola
+  439  "
+  440  echo $a
+  441  a=`echo *`
+  442  echo $a
+  443  a=adios
+  444  echo $a
+  445  a=echo *
+  446  *
+  447  man grep
+  448  files=`ls`
+  449  for i in $files; do echo -n "$i"; grep $i $i; done
+  450  for i in $files; do echo -n "$i "; grep $i $i; done
+  451  echo $files
+  452  ls /dev
+  453  more /etc/passwd | grep intel
+  454  echo $?
+  455  ls multTable 
+  456  ls arc
+  457  echo $?
+  458  ls multTable 
+  459  echo $?
+  460  python
+  461  python3
+  462  exit
+  463  cd Documentos/
+  464  ls
+  465  vim BuscaArchivo
+  466  chmod u+x BuscaArchivo 
+  467  ls
+  468  ./BuscaArchivo 
+  469  exit
+  470  ps
+  471  exit
+  472  ls
+  473  cd Documentos/
+  474  ls
+  475  cd Python/
+  476  ls
+  477  cat Hola.py 
+  478  cd ..
+  479  ls
+  480  rm -r Python/
+  481  sudo dnf install bpython
+  482  sudo su -
+  483  sudo su - rot
+  484  sudo su - root
+  485  su - root
+  486  ls
+  487  git clone https://github.com/IntelBUAP/Python3.git
+  488  ls
+  489  bpython3
+  490  ls
+  491  bpython3
+  492  vim
+  493  ls
+  494  vim scrip07102015.sh
+  495  ls
+  496  chmod u+x scrip07102015.sh 
+  497  ls
+  498  sh scrip07102015.sh
+  499  vim scrip07102015.sh
+  500  sh scrip07102015.sh
+  501  man test
+  502  ls /dev
+  503  clear
+  504  ls
+  505  >alfa
+  506  ls
+  507  ls -lrt
+  508  test -s alfa
+  509  test -s Tarea1.py
+  510  ls
+  511  vim script1_07102015.sh
+  512  ls
+  513  chmod u+x script1_07102015.sh 
+  514  ls
+  515  sh script1_07102015.sh 
+  516  ls
+  517  ls -lrt
+  518  sh script1_07102015.sh 
+  519  PS1="Hola...................<"
+  520  echo $REMOTEHOST
+  521  pwd
+  522  RemoteHost=152.221.3.12
+  523  echo RemoteHost
+  524  echo $RemoteHost
+  525  DISPLAY="$RemoteHost:0"
+  526  echo $DISPLAY
+  527  man test
+  528  echo Hola $PS1 a todos
+  529  echo Hola \$PS1 a todos
+  530  while true; do df -h .; sleep 10; clear; done
+  531  input
+  532  bash
+  533  echo $BASH
+  534  echo $CSH
+  535  ls
+  536  vim script2_07102015.sh
+  537  chmod script2_07102015.sh 
+  538  chmod u+x script2_07102015.sh 
+  539  sh script2_07102015.sh 
+  540  exit
+  541  ls
+  542  vim cd Python3/
+  543  cd Python3/
+  544  ls
+  545  cd ..
+  546  cd -
+  547  ls
+  548  vim codigo16.py 
+  549  vim codigo15.py 
+  550  vim codigo16.py 
+  551  python3 codigo16.py 
+  552  ls
+  553  git pull
+  554  ls
+  555  cat codigo18.py 
+  556  cat codigo19.py 
+  557  cat codigo20.py 
+  558  cat codigo23.py 
+  559  cat codigo24.py 
+  560  cat codigo25.py 
+  561  cat codigo26.py 
+  562  ls
+  563  cd ..
+  564  ls
+  565  vim Tarea1.py
+  566  python3 Tarea1.py
+  567  e
+  568  exit
+  569  echo $$
+  570  ps
+  571  exit
+  572  dnf search gcc
+  573  ls
+  574  cd Documentos/
+  575  ls
+  576  cd Python3/
+  577  ls
+  578  git pull
+  579  ls -lrt
+  580  ls -lrt | wc -l
+  581  pwd
+  582  cd ..
+  583  ls
+  584  man getlineno
+  585  ls
+  586  ls -lrt
+  587  vim script0_12102015.py
+  588  man sed
+  589  chmod u+x script0_12102015.py 
+  590  ls -lrt
+  591  sh script0_12102015.py .
+  592  pwd
+  593  sh script0_12102015.py /home/intel/Documentos/
+  594  ps
+  595  echo $$
+  596  ps
+  597  bash
+  598  echo $$
+  599  ls
+  600  pwd
+  601  man gcc
+  602  man bash
+  603  cups
+  604  man cups
+  605  man lp
+  606  man pr
+  607  read x
+  608  echo $x
+  609  echo
+  610  print hola
+  611  man print
+  612  ls
+  613  ls -lrt
+  614  clear
+  615  echo $x
+  616  unset $x
+  617  echo $x
+  618  echo x
+  619  unset x
+  620  echo $x
+  621  exit
+  622  cd Documentos/
+  623  ls
+  624  ls -lrt
+  625  vim script1_12102015.py
+  626  chmod u+x script1_12102015.py
+  627  vim script1_12102015.py
+  628  ls
+  629  git clone https://github.com/leortegar/scripting.git
+  630  ls
+  631  cd scripting/
+  632  ls
+  633  mv scri* scripting
+  634  ls
+  635  cd ..
+  636  ls
+  637  mv scrip* scripting/
+  638  ls
+  639  ls-lrt
+  640  cat alfa 
+  641  more alfa
+  642  rm alfa 
+  643  ls
+  644  mv BuscaArchivo scripting/
+  645  mv multTable scripting/
+  646  ls
+  647  cd scripting/
+  648  ls
+  649  ls -lrt
+  650  vim referencias
+  651  ls
+  652  git status
+  653  vim script1_12102015.py
+  654  man mv
+  655  vim referencias
+  656  git status
+  657  git add BuscaArchivo 
+  658  git add multTable 
+  659  git referencias
+  660  git add referencias
+  661  git add scrip*
+  662  git status
+  663  git push origin master
+  664  git status
+  665  pwd
+  666  ls -rt
+  667  ls -
+  668  ls 
+  669  git pull
+  670  ls -lrt
+  671  git status
+  672  git commit
+  673  git status
+  674  git push origin master
+  675  git status
+  676  git lg
+  677  git log
+  678  ls -lrt
+  679  git status
+  680  ls
+  681  ls h
+  682  git status
+  683  ls -l a 2>errores.log
+  684  more errores.log 
+  685  git status
+  686  rm errores.log 
+  687  git status
+  688  ls
+  689  exit
+  690  dir
+  691  cd Documentos/
+  692  dir
+  693  python3 Calculadora.py 
+  694  mkdir examen
+  695  cd examen/
+  696  git clone https://github.com/chrisgsdiaz/raymondsExamen.git
+  697  git status
+  698  dir
+  699  cd raymondsExamen/
+  700  git status
+  701  git add .
+  702  git commit -m "Menu"
+  703  git push origin master
+  704  python3 Calculadora.py 
+  705  python3
+  706  python3 Calculadora.py 
+  707  git status
+  708  git add .
+  709  git commit -m "Ya esta todo"
+  710  git push origin master
+  711  dir
+  712  cd ..
+  713  dir
+  714  cd ..
+  715  dir
+  716  python3 password.py 
+  717  ls
+  718  cd Documentos/
+  719  ls
+  720  ls /usr/lib
+  721  ls /usr/include
+  722  pwd
+  723  git clone
+  724  git clone https://github.com/IntelBUAP/GCC5.git
+  725  ls
+  726  cd GCC5/
+  727  ls
+  728  man ar
+  729  man gcc
+  730  man d
+  731  man ld
+  732  ld
+  733  man du
+  734  ls
+  735  du codigo0.c 
+  736  du -hcodigo0.c 
+  737  du -h codigo0.c 
+  738  ld
+  739  man ld
+  740  ls
+  741  cd ..
+  742  ls
+  743  cd scripting/
+  744  ls
+  745  vim referencias 
+  746  git status
+  747  git pull
+  748  vim referencias 
+  749  git status
+  750  git add referencias 
+  751  git status
+  752  vim referencias 
+  753  git status
+  754  man grep
+  755  ls
+  756  cat textFile 
+  757  man grep
+  758  grep -n Hay textFile 
+  759  ls
+  760  man grep
+  761  git status
+  762  cd ../Python3/
+  763  git status
+  764  git pull
+  765  git status
+  766  ls
+  767  cd Evaluaciones/tuxes/
+  768  ls
+  769  cd eva1/
+  770  ls
+  771  vim ExamenGrupo.py 
+  772  cd ..
+  773  cd.
+  774  ccd
+  775  cd
+  776  ls
+  777  cd Documentos/
+  778  ls
+  779  cd scripting/
+  780  git status
+  781  git add referencias 
+  782  git commit
+  783  git status
+  784  git push origin master
+  785  git status
+  786  vim referencias 
+  787  git status
+  788  ls
+  789  vim funciones.sh
+  790  ls
+  791  chmod u+x funciones.sh 
+  792  ls
+  793  sh funciones.sh 
+  794  vim funciones2.sh 
+  795  ls
+  796  chmod u+x funciones2.sh 
+  797  ls
+  798  nano funciones
+  799  nano funciones.sh 
+  800  man test
+  801  ls
+  802  git status
+  803  git add funciones.sh 
+  804  git add funciones2.sh 
+  805  git status
+  806  git commit
+  807  git status
+  808  git push origin master
+  809  git status
+  810  ls
+  811  man test
+  812  ls -lrt
+  813  ls -lrt /bin
+  814  ls -lrt /usr/bin
+  815  echo $PATH
+  816  ls -lrt /usr/sbin
+  817  whereis echo
+  818  whereis whereis
+  819  git status
+  820  cd ../Python3/
+  821  git status
+  822  git pull
+  823  cd -
+  824  clear
+  825  ls
+  826  man sar
+  827  sar
+  828  ps
+  829  man s
+  830  man ps
+  831  ls
+  832  vim ciclo.sh
+  833  chmod u+x ciclo.sh 
+  834  sh ciclo.sh 
+  835  vim ciclo.sh
+  836  sh ciclo.sh 
+  837  sh ciclo.sh &
+  838  psps
+  839  ps
+  840  sh ciclo.sh 
+  841  s
+  842  ps
+  843  jobs
+  844  fg 1
+  845  ls
+  846  git status
+  847  git add ciclo.sh 
+  848  git status
+  849  git commit
+  850  git status
+  851  git push origin master
+  852  git status
+  853  ls
+  854  exit
+  855  ifconfig
+  856  ls
+  857  vi mvu
+  858  ls
+  859  rm mvu 
+  860  ls
+  861  exit
+  862  cd Documentos/
+  863  ls
+  864  mkdir codingC
+  865  cd codingC/
+  866  ls
+  867  cd ..
+  868  ls
+  869  vim script1.sh
+  870  vim script2.sh
+  871  zram
+  872  man zram
+  873  htop
+  874  man gcc
+  875  gcc
+  876  man nm
+  877  echo $HISTORY
+  878  #gcc -E -O2 codig13.c -o codigo13.i
+  879  #gcc -S -O2 codig13.c -o codigo13.s
+  880  #gcc -c -O2 codig13.c -o codigo13.o
+  881  #gcc -O2 codig13.c -o codigo13
+  882  #gcc -E -O3 codig13.c -o codigo13.i
+  883  #gcc -S -O3 codig13.i -o codigo13.s
+  884  #gcc -c -O3 codig13.s -o codigo13.o
+  885  #du -h codig13.o
+  886  #gcc -E -Og codigo13.c -o codigo13.i
+  887  #gcc -S -Og codigo13.i -o codigo13.s
+  888  #gcc -c -Og codigo13.s -o codigo13.o
+  889  du -h codigo13.o
+  890  #du -h codigo13.o
+  891  #gcc -Og codigo13.o -o codigo13
+  892  #gcc -E -Os codigo13.c -o codigo13.i
+  893  #gcc -S -Os codigo13.i -o codigo13.s
+  894  #gcc -c -Os codigo13.s -o codigo13.o
+  895  #du -b codigo13.o
+  896  #gcc -Os codigo13.o -o codigo13
+  897  #du -b codigo13
+  898  man du
+  899  #gcc -E -Ofast codigo13.c -o codigo13.i
+  900  #gcc -S -Ofast codigo13.i -o codigo13.s
+  901  #gcc -c -Ofast codigo13.s -o codigo13.o
+  902  #du -b codigo13.
+  903  #gcc -Ofast codigo13.o -o codigo13
+  904  #du -b codigo13
+  905  time ./codigo13 100000
+  906  ls
+  907  cd scripting/
+  908  ls
+  909  vim referencias 
+  910  git pull
+  911  vim referencias 
+  912  cd ..
+  913  ls
+  914  chmod u+x script1.sh 
+  915  ls
+  916  ./script1.sh 
+  917  vim referencias 
+  918  vim script1.sh 
+  919  ./script1.sh 
+  920  vim script1.sh 
+  921  ./script1.sh 
+  922  ./script2.sh 
+  923  chmod u+x script2.sh 
+  924  ./script2.sh 
+  925  ls
+  926  ./script2.sh
+  927  vim script2.sh 
+  928  ./script2.sh
+  929  cat script1.sh 
+  930  cat script2.sh 
+  931  ls
+  932  mv script1.sh script2.sh scripting/
+  933  ls
+  934  cd scripting/
+  935  ls
+  936  git status
+  937  vim referencias 
+  938  cd ..
+  939  ls
+  940  cd codingC/
+  941  ls
+  942  cd ..
+  943  ls
+  944  cd GCC5/
+  945  ls
+  946  git pull
+  947  cat codigo0.c 
+  948  cp codigo0.c ../codingC/
+  949  ls
+  950  cd ../codingC/
+  951  ls
+  952  vim codigo0.c 
+  953  gcc -c codigo0.c -o codigo.o
+  954  ls -lrt
+  955  man make
+  956  cd -
+  957  cd ../scripting/
+  958  vim referencias 
+  959  cd -
+  960  l
+  961  sls
+  962  ls
+  963  cd -
+  964  vim referencias 
+  965  cd .
+  966  ls
+  967  cd -
+  968  cd ../codingC/
+  969  ls
+  970  gcc -o codigo.o codigo
+  971  man gcc
+  972  ls
+  973  cd -
+  974  ls
+  975  vim referencias 
+  976  man du
+  977  vim referencias 
+  978  history
+  979  history >> referencias 
