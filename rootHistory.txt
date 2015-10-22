@@ -1,0 +1,104 @@
+    1  dnf update
+    2  ip a
+    3  ip l s enp1s0 up
+    4  ip a
+    5  ip l s enp1s0 down
+    6  ip l s enp1s0 up
+    7  i a
+    8  ip a
+    9  dhclient enp1s0
+   10  ip a
+   11  ping 8.8.8.8
+   12  nmtui
+   13  ip a
+   14  nmtui
+   15  ip a
+   16  systemctl restart network
+   17  ip a
+   18  nmtu
+   19  nmtui
+   20  ip a
+   21  iconfig
+   22  cear
+   23  clear
+   24  nmtui
+   25  clear
+   26  dnf
+   27  clear
+   28  ls
+   29  clear
+   30  i a
+   31  rebot
+   32  reboot
+   33  dnf install git
+   34  uname -a
+   35  hostname
+   36  git clone https://github.com/IntelBUAP/GuiaDeInterfazHumana.git
+   37  exit
+   38  ls
+   39  ls -lrt
+   40  rm -r GuiaDeInterfazHumana/
+   41  clear
+   42  exit
+   43  dnf install python3-bpython.noarch
+   44  dnf seach ninja-IDE
+   45  dnf search ninja-IDE
+   46  clear
+   47  dnf install ninja-IDE
+   48  dnf install ninja-ide
+   49  exit
+   50  dnf install fash
+   51  dnf install flash
+   52  dnf install aobe
+   53  dnf install adbe
+   54  dnf install adobe
+   55  rpm -ivh http://linuxdownload.adobe.com/adobe-release/adobe-release-x86_64-1.0-1.noarch.rpm
+   56  rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
+   57  dnf install flash-plugin nspluginwrapper alsa-plugins-pulseaudio libcurl
+   58  cat << EOF > /etc/yum.repos.d/google-chrome.repo
+   59  [google-chrome]
+   60  name=google-chrome - \$basearch
+   61  baseurl=http://dl.google.com/linux/chrome/rpm/stable/\$basearch
+   62  enabled=1
+   63  gpgcheck=1
+   64  gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
+   65  EOF
+   66  dnf install google-chrome-stable
+   67  ls /etc/yum.repos.d/google-chrome.repo 
+   68  cat /etc/yum.repos.d/google-chrome.repo 
+   69  dnf install updtae
+   70  dnf update
+   71  dnf install google-chrome-stable
+   72  cat << EOF > /etc/yum.repos.d/google-chrome.repo
+   73  [google-chrome]
+   74  name=google-chrome - \$basearch
+   75  baseurl=http://dl.google.com/linux/chrome/rpm/stable/\$basearch
+   76  enabled=1
+   77  gpgcheck=1
+   78  gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
+   79  EOF
+   80  dnf install google-chrome-stable
+   81  cat << EOF > /etc/yum.repos.d/google-chrome.repo
+   82  [google-chrome]
+   83  name=google-chrome - \$basearch
+   84  baseurl=http://dl.google.com/linux/chrome/rpm/stable/\$basearch
+   85  enabled=1
+   86  gpgcheck=1
+   87  gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
+   88  EOF
+   89  dnf install google-chrome-stable
+   90  dnf install bpython
+   91  exit
+   92  dnf install @development-tools
+   93  dnf install gettext
+   94  dnf install @development-tools
+   95  exit
+   96  dnf install @development-tools
+   97  exit
+   98  #cat << EOF > /etc/yum.repos.d/google-chrome.repo >> comandos.txt 
+   99  cat comandos.txt 
+  100  echo "dnf install gettext" >> comandos.txt 
+  101  echo "dnf install @development-tools" >> comandos.txt 
+  102  echo "dnf install google-chrome-stable" >> comandos.txt
+  103  exit
+  104  history >> rootHistory.txt

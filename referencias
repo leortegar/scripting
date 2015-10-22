@@ -1041,4 +1041,79 @@ apple developer program
   976  man du
   977  vim referencias 
   978  history
-  979  history >> referencias 
+  979  history >> referencias
+
+
+
+Traps
+Interrupcion via software
+Permite atrapar (cachar interrupciones) y ejecutar algunas instrucciones/comandos:
+
+trap "rm -f /tmp/archivo" 0 1 2 3 15  <--- Señales de interrupción
+ ^     \_______Lista de comandos separados por ; entre ""
+ |
+Nombre del comando
+
+0 Salida normal
+1 Hang Up
+2 Quit
+15 Software terminal | signal
+
+WAIT
+Esera sobre la terminación de un determinado proceso
+$ comando_largo.sh > file1 &
+  [PID]
+
+Tubería con nombre
+mknod
+
+$ mknod tuberia p
+$ ls -l tuberia
+
+p rw-r--r-- tuberia
+
+$ ls -lR / >tuberia
+----------------------
+$ cat <tuberia
+
+
+
+Ejecución encadenada de comandos
+$ ls file && cat file1
+$ comando1 || comando2 || date || echo "Fin"
+
+
+$ pwd
+$ (cd /etc ; ls -l passwd; date )
+   \____genera un subShell_____/
+
+NEL PASTEL....(cd /etc; ps; ls -l passwd; ps; date)
+  PID TTY          TIME CMD
+ 2207 pts/0    00:00:02 bash
+21650 pts/0    00:00:00 bash
+21651 pts/0    00:00:00 ps
+-rw-r--r--. 1 root root 2412 ago 19 15:30 passwd
+  PID TTY          TIME CMD
+ 2207 pts/0    00:00:02 bash
+21650 pts/0    00:00:00 bash
+21653 pts/0    00:00:00 ps
+mié oct 21 18:51:18 CDT 2015
+NEL PASTEL....ps
+  PID TTY          TIME CMD
+ 2207 pts/0    00:00:02 bash
+21661 pts/0    00:00:00 ps
+NEL PASTEL....
+
+
+
+
+sockets:
+http puerto 80
+IP, #de puerto, Protocolo de transporte
+
+
+http://linuxcommand.org/lc3_learning_the_shell.php
+http://linuxcommand.org/lts0080.php
+irql
+raspberry
+
