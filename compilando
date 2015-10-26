@@ -1,0 +1,18 @@
+gcc codigo0.c -o codigo
+gcc -Wall codigo0.c -o codigo
+
+ #include "codigo.h" 
+#include <codigo.h> 
+gcc -Wall codigo2.c funcion.c -o codigo2
+
+Preprocesamiento
+gcc -E codigo.c -o codigo.i
+
+Compilación
+gcc -S codigo.i -o codigo.s
+
+Ensamblado
+gcc -c codigo.s -o codigo.o
+
+Enlazado
+gcc codigo.o -o codigo

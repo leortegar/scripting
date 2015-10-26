@@ -1,0 +1,21 @@
+GNU Compiler Collection <-- GCC
+Desarrollo guiado por la GCC Steering Commitee
+GCC 0.1 1st compilador portable para optimizar el estándar ANSI C <--- 1987
+GCC 2.0 [1992] Compila C++ -- [1997] Se crea EGCS para mejorar la optmización y soporte de C++ 
+GCC 3.0 se retoma el nombre de GCC en lugar de EGCS se integra soporte para java con el front-end GCJ -- Soporte el nuevo estándar de C el ISO-C99 -- Reescritura del manual del preprocesador de C
+GCC 4.0 Lista de ubicación por defecto cuando se compila con la opcioón debug y alguna optimización -- SSA Static Single Assignment  RTL
+GCC 4.0 -Sustitución escalar de agregados -Propagación de constantes -Propagación de rangos de valores -Eliminación de la redundancia parcial -Auto-vectorización -+JDK 1.2 para GCJ
+GCC 5.0 -std=gnu89 --> -std=gnu11 new standard ISO C11 -libstdc++ usa un nuevo ABI -optimización en tiempo de linkeado -Mejoras para el address sanitizer [4.8], desbordamientos en los segementos del HEAP, STACK
+GCC 6.0 soporte para OpenMP4.0 y el preliminar de OpenACC -libgccjit que permite construir en GCC una bliblioteca compartida para incrustarla en otros procesos (como interpretes)
+GCC 6.0 para mediados del 2016 -std=gnu++14 en lugar de -std=gnu++98 -limpieza de los viejos subsitemas sin mantenimiento -fin de vida de la arch SH5/SH64 -inicia soporte para gnu++17
+GCC compilador portable -Usable for the most arch ARM & microcontroladores como DSP's and 64bits arch
+GCC compilador cruzado -Tiene multiples frontends para parsear diferentes lenguajes -Diseño modular
+
+ Compilando 
+ Código fuente a código máquina [ELF]
+Código máquina es almacenado como un archivo asignable en memoria --> archivo binario
+
+1. Preprocesamiento 
+2. Compilación 
+3. Ensamblado 
+4. Enlazado
