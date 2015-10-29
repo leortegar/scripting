@@ -1,8 +1,7 @@
 #!/bin/bash
-p=$PS1
-set PS1="Welcome...."
-echo "Manual:: sos"
-x="Hola"
+#p=$PS1
+#set PS1="Welcome...."
+echo "::Bienvenido a interprete basico::"
 
 read x
 
@@ -20,10 +19,21 @@ if [ $x = "sos" ] ; then
 	sh test.sh
 elif [ $x = "encuentra" ] ; then
 	echo "Encontraré"
-	#find $2
+	sh test.sh
 elif [ $x = "bye" ] ; then
+	#dialog --yesno "Desea salir?" 6 30
 	echo "Adios"
+elif [ $x = "ver" ] ; then
+	lista=`echo *`
+	for i in ${lista}
+	do
+	#if !( [ ${frase:$i:1} ] ); then
+	#	echo "es un espacio"
+		echo ${lista:1}
+	done
+	echo $lista
+	sh test.sh
 else
-	echo "No se encontro la orden $x"
+	echo -e '\E[31;47m'"\033[6mNo se encontró la órden \"$x\"." '\E[30;47m'"Obtenga ayuda con el comando" '\E[35;47m'"\033[5msos\033[0m"
 	sh test.sh
 fi
