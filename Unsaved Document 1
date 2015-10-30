@@ -1,0 +1,35 @@
+tmpa=${#sep[@]}
+        param=${sep[@]:2:$tmpa}
+        if [ "${sep[1]}" == ".tar.bz" ]
+        then
+            param=${sep[@]:3:$tmpa}
+            tar -c $param | bzip2 > ${sep[2]}
+        elif [ "${sep[1]}" == ".tar.gz" ]
+        then
+            tar -czfv $param
+        elif [ "${sep[1]}" == ".zip" ]
+        then
+            zip $param
+        elif [ "${sep[1]}" == ".rar" ]
+        then
+            rar -a $param
+        fi
+
+
+
+tmpa=${#sep[@]}
+        param=${sep[@]:2:$tmpa}
+        if [ "${sep[1]}" == ".tar.bz2" ]
+        then
+            bzip2 -dc $param | tar -xv
+        elif [ "${sep[1]}" == ".tar.gz" ]
+        then
+            tar -xzfv $param
+        elif [ "${sep[1]}" == ".zip" ]
+        then
+            unzip $param
+        elif [ "${sep[1]}" == ".rar" ]
+        then
+            unrar -x $param
+        fi
+
