@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#PATH_OLD=$PATH
-#PATH=$PATH:`pwd`
+# PATH_OLD=$PATH
+# PATH=$PATH:`pwd`
 
 read -p "Ingresa cadena:: " x
 
@@ -11,16 +11,17 @@ if [ -z "$x" ] ; then
 else
 	palabras=( $x )
 	longi="${#palabras[@]}"
+	echo "La frase tiene $longi palabras"
 	if [ $longi -eq 2 ] ; then
 		if [ ${palabras[0]} = "moversea" ] ; then
-			#echo "nos movemos a ${palabras[1]}"
-			cd ${palabras[1]}
-			pwd
-			sh otro.sh
-			pwd
+			echo "nos movemos a ${palabras[1]}"
+			# cd ${palabras[1]}
+			# pwd
+			# sh otro.sh
+			# pwd
 		fi
 	else
 		echo "Sobran parametros. Uso:: moversea [/ruta]"
-		sh otro.sh
+		# sh otro.sh
 	fi
 fi

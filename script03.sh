@@ -1,3 +1,5 @@
 #!/bin/bash
-files=`ls`
-echo "El nmbre del archiv  directorio es $files"
+#oldest --examine the oldest parts of a directory
+HOWMANY=$1
+shift
+ls -lt $* | tail +2 | tail $HOWMANY
